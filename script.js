@@ -8,6 +8,9 @@ function subtract(a, b) {
 function multiply(a, b) {
   return a * b;
 }
-function add(a, b) {
+function devide(a, b) {
   return a / b;
+}
+function operator(func, a, b) {
+  return func(a, b);
 }
