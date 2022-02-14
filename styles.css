@@ -17,9 +17,11 @@ body {
 
 .display {
   display: flex;
+  flex-direction: row-reverse;
   background-color: darkkhaki;
-  padding: 40px 0;
   margin: 25px;
+  height: 78px;
+  align-items: flex-end;
 }
 
 .button-pad {
@@ -43,10 +45,9 @@ body {
   height: 20px;
 }
 
-.clear-button {
+#clear-button {
   width: 90px;
 }
-
 
 .operation-pad {
   display: flex;

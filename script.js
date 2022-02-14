@@ -14,3 +14,5 @@ function devide(a, b) {
 function operator(func, a, b) {
   return func(a, b);
 }
+
+//
