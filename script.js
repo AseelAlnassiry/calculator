@@ -59,6 +59,7 @@ clearButton.addEventListener("click", () => {
   firstValue = undefined;
   secondValue = undefined;
   answer = undefined;
+  currentOperation = undefined;
   displayValue.textContent = "";
 });
 
@@ -72,6 +73,7 @@ operationButtons.forEach((button) => {
     } else {
       secondValue = parseFloat(displayValue.textContent);
       answer = operator(currentOperation.textContent, firstValue, secondValue);
+      answer = Math.round((answer + Number.EPSILON) * 1000) / 1000;
       displayValue.textContent = answer;
       currentOperation = button;
     }
@@ -83,6 +85,7 @@ equalsButton.addEventListener("click", () => {
   if (firstValue !== undefined) {
     secondValue = parseFloat(displayValue.textContent);
     answer = operator(currentOperation.textContent, firstValue, secondValue);
+    answer = Math.round((answer + Number.EPSILON) * 1000) / 1000;
     displayValue.textContent = answer;
     firstValue = undefined;
     secondValue = undefined;

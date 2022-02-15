@@ -22,6 +22,8 @@ body {
   margin: 25px;
   height: 78px;
   align-items: flex-end;
+  border-radius: 7px;
+  border: 5px solid black;
 }
 
 .button-pad {
@@ -38,6 +40,7 @@ body {
   height: 100px;
   align-content: flex-start;
   padding-right: 0px;
+  gap: 5px;
 }
 
 .number-button {
@@ -52,15 +55,17 @@ body {
 
 #clear-button {
   height: 20px;
-  width: 90px;
+  width: 105px;
 }
 
 .operation-pad {
   display: flex;
   flex-direction: column;
+  gap: 7px;
 }
 
 .operation-button {
   width: 60px;
   height: 25px;
+  
 }
