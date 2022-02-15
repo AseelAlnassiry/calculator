@@ -45,7 +45,13 @@ body {
   height: 20px;
 }
 
+#equals-button {
+  width: 30px;
+  height: 20px;
+}
+
 #clear-button {
+  height: 20px;
   width: 90px;
 }
 
